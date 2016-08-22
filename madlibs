@@ -1,8 +1,36 @@
 #Привет, будем делать игру МадЛибс. Спаршиваем у пользователя определенное количество слов и подставляем их в рассказ, чтобы было смешно
 
-print ("Привет, давай сыграе с тобой в игру.")
+#Hello. We make a MadLibs. Game with a fun words
+
+print ("Hello, let's play a game!")
+
+name = input (str("What is your name? "))
+
+adj1 = input("Write first adjective: ")
+adj2 = input("Write second adjective: ")
+adj3 = input("Write third adjective: ")
+
+verb1 = input("Write a first verb: ")
+verb2 = input("Write a second verb: ")
+verb3 = input("Write a third verb: ")
+
+noun1 = input("Wrote a first noun: ")
+noun2 = input("Write a second noun: ")
+noun3 = input("Write a third noun: ")
+noun4 = input("Write a fourth noun: ")
+
+anim = input("Write any animal: ")
+food = input("Write any food: ")
+fruit = input("Write any fruit: ")
+numb = input("Write any number: ")
+hero = input("Write any superhero name: ")
+count = input("Write any country name: ")
+dess = input("Write any dessert name: ")
+year = input("Write any year number: ")
 
 
 
-name = input("Назови свое имя: ")
+#The template for the story
+STORY = "This morning I woke up and felt %s because %s was going to finally %s over the big %s %s. On the other side of the %s were many %ss protesting to keep %s in stores. The crowd began to %s to the rythym of the %s, which made all of the %ss very %s. %s tried to %s into the sewers and found %s rats. Needing help, %s quickly called %s. %s appeared and saved %s by flying to %s and dropping %s into a puddle of %s. %s then fell asleep and woke up in the year %s, in a world where %ss ruled the world." % (adj1, name, verb1, adj2, noun1, noun2, anim, food, verb2, noun3, fruit, adj3, name, verb3, numb, name, hero, hero, name, count, name, dess, name, year, noun4)
 
+print (STORY)
